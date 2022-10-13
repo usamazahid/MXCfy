@@ -1,0 +1,48 @@
+[01-Oct-2022 19:38:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Unknown error 1045 in /home/wqfccupd0b8g/public_html/saas.mxc.com.pk/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:40
+Stack trace:
+#0 /home/wqfccupd0b8g/public_html/saas.mxc.com.pk/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(40): PDO->__construct('mysql:host=127....', 'mxc_usama', 'BIOSAFE7TO7.5', Array)
+#1 /home/wqfccupd0b8g/public_html/saas.mxc.com.pk/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(67): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'mxc_usama', 'BIOSAFE7TO7.5', Array)
+#2 /home/wqfccupd0b8g/public_html/saas.mxc.com.pk/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'mxc_usama', 'BIOSAFE7TO7.5', Array)
+#3 /home/wqfccupd0b8g/public_html/saas.mxc.com.pk/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Dat in /home/wqfccupd0b8g/public_html/saas.mxc.com.pk/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 703
+[05-Oct-2022 08:15:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1203] User nr6grat3_usama already has more than 'max_user_connections' active connections in /home4/nr6grat3/saas.mxclogistics.com/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:40
+Stack trace:
+#0 /home4/nr6grat3/saas.mxclogistics.com/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(40): PDO->__construct('mysql:host=127....', 'nr6grat3_usama', 'BIOSAFE7TO7.5', Array)
+#1 /home4/nr6grat3/saas.mxclogistics.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(67): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'nr6grat3_usama', 'BIOSAFE7TO7.5', Array)
+#2 /home4/nr6grat3/saas.mxclogistics.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'nr6grat3_usama', 'BIOSAFE7TO7.5', Array)
+#3 /home4/nr6grat3/saas.mxclogistics.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MyS in /home4/nr6grat3/saas.mxclogistics.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 703
+[05-Oct-2022 08:22:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1203] User nr6grat3_usama already has more than 'max_user_connections' active connections in /home4/nr6grat3/saas.mxclogistics.com/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:40
+Stack trace:
+#0 /home4/nr6grat3/saas.mxclogistics.com/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(40): PDO->__construct('mysql:host=127....', 'nr6grat3_usama', 'BIOSAFE7TO7.5', Array)
+#1 /home4/nr6grat3/saas.mxclogistics.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(67): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'nr6grat3_usama', 'BIOSAFE7TO7.5', Array)
+#2 /home4/nr6grat3/saas.mxclogistics.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'nr6grat3_usama', 'BIOSAFE7TO7.5', Array)
+#3 /home4/nr6grat3/saas.mxclogistics.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MyS in /home4/nr6grat3/saas.mxclogistics.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 703
+[07-Oct-2022 17:53:35 UTC] PHP Warning:  require_once(/home/wqfccupd0b8g/public_html/mxcfy.com/public/index.php): failed to open stream: No such file or directory in /home/wqfccupd0b8g/public_html/mxcfy.com/index.php on line 21
+[07-Oct-2022 17:53:35 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/wqfccupd0b8g/public_html/mxcfy.com/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/wqfccupd0b8g/public_html/mxcfy.com/index.php on line 21
+[07-Oct-2022 17:55:54 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [store.slug] not defined. in /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:444
+Stack trace:
+#0 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(739): Illuminate\Routing\UrlGenerator->route('store.slug', 'my-store', true)
+#1 /home/wqfccupd0b8g/public_html/mxcfy.com/storage/framework/views/79019392ae8a344c04da9c339277c8d1969f6761.php(24): route('store.slug', 'my-store')
+#2 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(107): require('/home/wqfccupd0...')
+#3 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(108): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#4 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\Filesy in /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 444
+[07-Oct-2022 17:55:57 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [store.slug] not defined. in /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:444
+Stack trace:
+#0 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(739): Illuminate\Routing\UrlGenerator->route('store.slug', 'my-store', true)
+#1 /home/wqfccupd0b8g/public_html/mxcfy.com/storage/framework/views/79019392ae8a344c04da9c339277c8d1969f6761.php(24): route('store.slug', 'my-store')
+#2 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(107): require('/home/wqfccupd0...')
+#3 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(108): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#4 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\Filesy in /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 444
+[07-Oct-2022 17:56:49 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [store.slug] not defined. in /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:444
+Stack trace:
+#0 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(739): Illuminate\Routing\UrlGenerator->route('store.slug', 'my-store', true)
+#1 /home/wqfccupd0b8g/public_html/mxcfy.com/storage/framework/views/79019392ae8a344c04da9c339277c8d1969f6761.php(24): route('store.slug', 'my-store')
+#2 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(107): require('/home/wqfccupd0...')
+#3 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(108): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#4 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\Filesy in /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 444
+[07-Oct-2022 17:56:53 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [store.slug] not defined. in /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:444
+Stack trace:
+#0 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(739): Illuminate\Routing\UrlGenerator->route('store.slug', 'my-store', true)
+#1 /home/wqfccupd0b8g/public_html/mxcfy.com/storage/framework/views/79019392ae8a344c04da9c339277c8d1969f6761.php(24): route('store.slug', 'my-store')
+#2 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(107): require('/home/wqfccupd0...')
+#3 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(108): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#4 /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\Filesy in /home/wqfccupd0b8g/public_html/mxcfy.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 444
