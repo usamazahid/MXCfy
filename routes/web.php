@@ -658,6 +658,9 @@ Route::put('email_template_status/{id}', 'EmailTemplateController@updateStatus')
 Route::put('email_template_status/{id}', 'EmailTemplateController@updateStatus')->name('email_template.update')->middleware(['auth','XSS']);
 // Route::resource('email_template', 'EmailTemplateController')->middleware(['auth','XSS',]);
 
+// Invoice
+Route::get('invoice/{lang?}', 'InvoiceController@index')->name('invoice')->middleware(['auth','XSS']);
+Route::get('invoice/change-status/{id}', 'InvoiceController@change_status')->name('invoice.change.status')->middleware(['auth','XSS']);
 //=================================Plan Request Module ====================================//
 Route::get('plan_request', 'PlanRequestController@index')->name('plan_request.index')->middleware(['auth','XSS',]);
 Route::get('request_frequency/{id}', 'PlanRequestController@requestView')->name('request.view')->middleware(['auth','XSS',]);

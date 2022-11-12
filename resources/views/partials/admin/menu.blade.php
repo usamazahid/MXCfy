@@ -172,6 +172,14 @@ $plan = \App\Models\Plan::where('id', \Auth::user()->plan)->first();
                             @endif
                         </span></a>
                 </li>
+                <li
+                    class="dash-item dash-hasmenu {{ Request::route()->getName()  == 'manage.invoice' || Request::route()->getName() == 'manage.invoice' ? ' active dash-trigger' : 'collapsed' }}">
+                    <a href="{{ route('invoice',\Auth::user()->lang) }}"
+                        class="dash-link {{ request()->is('invoice') ? 'active' : '' }}"><span
+                            class="dash-micon">
+                            <i class="ti ti-mail"></i>
+                        </span><span class="dash-mtext">{{ __('Invoice') }}</span></a>
+                </li>
             </ul>
         </div>
     </div>
